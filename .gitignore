@@ -170,7 +170,7 @@ cython_debug/
 /5-ArcgisPro工程/Stockholm.gdb/
 /5-ArcgisPro工程/.pyHistory
 /5-ArcgisPro工程/Amsterdam_road.gpkg
-#/5-ArcgisPro工程/建筑风格和年代深度学习.gdb/
+
 /5-ArcgisPro工程/阿姆斯特丹全市范围建筑年代预测准确度空间分布图.jpg
 /5-ArcgisPro工程/阿姆斯特丹市中心建筑年代预测结果空间分布.jpg
 /5-ArcgisPro工程/阿姆斯特丹建筑足迹.jpg
@@ -178,3 +178,11 @@ cython_debug/
 /3-selenium获取街景并进一步筛选街景图像/semantic-segmentation-pytorch-master/README.md
 /assets/CAM对比图.psd
 /assets/covers/
+/1-论文阅读和解析/assets/
+/2-获取数据集/assets/
+/3-selenium获取街景并进一步筛选街景图像/assets/
+/4.1-对建筑年代进行深度学习训练和预测/assets/
+/4.2-对建筑风格进行深度学习训练和预测/assets/
+/5-ArcgisPro工程/建筑风格和年代深度学习.aprx
+/5-ArcgisPro工程/建筑风格和年代深度学习.atbx
+/5-ArcgisPro工程/建筑风格和年代深度学习.gdb/
