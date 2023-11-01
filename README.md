@@ -1,4 +1,4 @@
-# 论文复现——《利用深度学习来识别建筑年代和风格》
+# 论文复现——《通过深度学习来识别建筑年代和风格》
 
 > Paper Replication——《Understanding architecture age and style through deep learning》
 
@@ -20,25 +20,11 @@
 | 🟠    | Part4-2.对建筑年代预测结果进行展示和分析                     | [博客🔗](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part4-2) |                                                              |
 | 😑    | 练习：Part5.对建筑风格进行深度学习训练和预测以及分析         | [博客🔗](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part5-1) |                                                              |
 
-
-
-- [Part1.论文解读：如何利用最近很火的深度学习来识别建筑年代和风格？](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part1)
-- [Part2.下载和预处理建筑足迹数据集](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part2)
-- [Part3-1.获取高质量的阿姆斯特丹建筑立面图像（上）](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part3-1)
-- [Part3-2.获取高质量的阿姆斯特丹建筑立面图像（下）](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part3-2)
-- [Part4-1.对建筑年代进行深度学习训练和预测](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part4-1)
-- [Part4-2.对建筑年代预测结果进行展示和分析](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part4-2)
-- [练习：Part5.对建筑风格进行深度学习训练和预测以及分析](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part5-1)
-
-
-
 ## 二、使用说明
 
 **fork 本仓库，然后克隆到本地或者用云端编辑器打开，最后安装环境。**
 
 ## 三、环境配置说明
-
-分三步：
 
 1. 直接安装Python、或者使用Anaconda、Pycharm、VScode安装。
 2. pytorch推荐单独安装，详见[PyTorch环境配置](https://cdn.renhai-lab.tech/archives/DL-01-pytorch#2.PyTorch%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)。
@@ -111,7 +97,7 @@
 └── requirements.txt
 ```
 
-## 论文引用信息 (Cite info)
+## 引用信息 (Cite info)
 
 Maoran Sun, Fan Zhang, Fabio Duarte, Carlo Ratti,
 Understanding architecture age and style through deep learning,
@@ -137,6 +123,6 @@ Keywords: Building age; Architectural style; Street view imagery; Built environm
 - [我的知乎](https://www.zhihu.com/people/Ing_ideas)
 - **微信公众号：**
 
-![微信](assets/qrcode_for_gh_c0d228771707_258.jpg)
+![微信](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/qrcode_for_gh_c0d228771707_258.jpg)
 
 <img src="assets/logo2.jpg" alt="更多账号" style="zoom:50%;" />
