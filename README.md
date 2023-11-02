@@ -1,14 +1,14 @@
 # 论文复现——《通过深度学习来识别建筑年代和风格》
 
-> Paper Replication——《Understanding architecture age and style through deep learning》
+📌建议先阅读[论文解读：如何利用最近很火的深度学习来识别建筑年代和风格？🔗](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part1)以了解论文的大致内容和技术方法
 
-《通过深度学习了解建筑年代和风格》论文复现代码已上传到[Github](https://github.com/renhai-lab/Paper_Replication--Understanding-architecture-age-and-style-through-deep-learning)和[Gitee](https://gitee.com/renhai-lab/Paper_Replication--Understanding-architecture-age-and-style-through-deep-learning)，但Gitee仅用于同步，目前文章和仓库还在更新中，请访问对应的主页查看。
+📌所有文章均可在[我的博客](https://cdn.renhai-lab.tech)和[微信公众号（renhai-lab）](assets/qrcode_for_gh_c0d228771707_258.jpg)中找到，欢迎关注！
+
+📌 收录进微信公众号专栏：[【SCI论文复现】《通过深度学习了解建筑年代和风格》](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwNjQyNjA4OQ==&action=getalbum&album_id=3161638624223559681#wechat_redirect)
+
+> 《通过深度学习了解建筑年代和风格》论文复现代码已上传到[Github](https://github.com/renhai-lab/Paper_Replication--Understanding-architecture-age-and-style-through-deep-learning)和[Gitee](https://gitee.com/renhai-lab/Paper_Replication--Understanding-architecture-age-and-style-through-deep-learning)，但Gitee仅用于同步，目前文章和仓库还在更新中，请访问对应的主页查看。
 
 ## 一、文章目录
-
-> 所有文章均可在[我的博客](https://cdn.renhai-lab.tech)和[微信公众号（renhai-lab）](assets/qrcode_for_gh_c0d228771707_258.jpg)中找到，欢迎关注！
->
-> 📌 收录进微信公众号专栏：[【SCI论文复现】《通过深度学习了解建筑年代和风格》](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwNjQyNjA4OQ==&action=getalbum&album_id=3161638624223559681#wechat_redirect)
 
 | 状态 | 文章标题                                                     | 博客                                                         | 微信文章                                                     |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -73,7 +73,26 @@
 
 
 
-## 五、仓库主要代码文件的结构
+## 五、数据集
+
+### 1.原始数据源
+
+> 数据源的获取会在下一篇文章[《获取数据集——《通过深度学习了解建筑年代和风格》论文复现（二）》](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part2)详细说明。
+
+- [BAG建筑足迹](https://service.pdok.nl/lv/bag/atom/bag.xml)——用于获取建筑的几何数据以及建筑年代数据
+
+- [剑桥大学建筑风格图集和相应数据](https://www.dropbox.com/sh/cz4xs1jeqm9y4bw/AACEiAWQDqhGqa6PzHgFXMuKa?dl=0)
+
+- [基于PyTorch的MIT ADE 20 K数据集语义分割](https://github.com/CSAILVision/semantic-segmentation-pytorch)
+
+### 2.（备用）国内百度网盘下载链接：
+
+- BAG建筑足迹：https://pan.baidu.com/s/1ugy2r8tvO6kbqUTxZWTsUA?pwd=216f 
+  提取码：216f
+- 剑桥大学建筑风格图集和相应数据：https://pan.baidu.com/s/1L4uBNvZvNr0oWdjpwAuwBw?pwd=c3bg 
+  提取码：c3bg
+
+## 六、仓库主要代码文件的结构
 
 ```
 ├── 1-论文阅读和解析
@@ -116,6 +135,7 @@
 ├── 5-ArcgisPro工程
 │   ├── 1.使用ArcPy简化和拆分建筑.py
 │   ├── 2.使用ArcPy寻找街景点.py
+│   └──  通过深度学习了解建筑风格和年代.ppkx
 ├── README.md
 ├── my_tools
 │   ├── engine.py
