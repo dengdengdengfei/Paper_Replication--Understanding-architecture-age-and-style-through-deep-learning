@@ -17,8 +17,8 @@
 | 🟠    | Part3-1.获取高质量的阿姆斯特丹建筑立面图像                   | [博客🔗](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part3-1) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247486379&idx=1&sn=ba562c4597fbe35d060da00a6732a8fd&chksm=c0e9e82df79e613b27bd20cb99a5b7d57f2c96739b6a5a9aed1f378d07311dc0afa6a88a7431#rd) |
 | 🟠    | Part3-2.获取高质量的阿姆斯特丹建筑立面图像                   | [博客🔗](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part3-2) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247486594&idx=1&sn=b155e114e8862d46e8fa713b2726c568&chksm=c0e9ef04f79e661235fbc94b734571eadcf06d44dc817cbd32906e4e3e3ff821473cbbce6cbb#rd) |
 | 🟠    | Part4-1.对建筑年代进行深度学习训练和预测                     | [博客🔗](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part4-1) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247487284&idx=1&sn=46e152ea7f69d51d76b10dfe6e5d577e&chksm=c0e9ecb2f79e65a4fe4db6d316d45a730c483a54ba5b641eb69cd8395146d113e19805b0fa90#rd) |
-| 🟠    | Part4-2.对建筑年代预测结果进行展示和分析                     | [博客🔗](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part4-2) |                                                              |
-| 😑    | 练习：Part5.对建筑风格进行深度学习训练和预测以及分析         | [博客🔗](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part5-1) |                                                              |
+| 🟠    | Part4-2.对建筑年代预测结果进行展示和分析                     | [博客🔗](https://cdn.renhai-lab.tech/archives/Understanding_architecture_age_and_style_through_deep_learning_part4-2) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247487319&idx=1&sn=6567c74123e57cd7ab4a88a8f3b6683d&chksm=c0e9ecd1f79e65c7e3671de13e86f4d7d37e8c027662961c1d93f5963d3abc964d9c78740ad1#rd) |
+| 😑    | 练习：Part5.对建筑风格进行深度学习训练和预测以及分析         |                                                              |                                                              |
 
 ## 二、使用说明
 
@@ -30,7 +30,50 @@
 2. pytorch推荐单独安装，详见[PyTorch环境配置](https://cdn.renhai-lab.tech/archives/DL-01-pytorch#2.PyTorch%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)。
 3. 其余依赖使用`pip install requirements.txt`。
 
-## 四、仓库主要代码文件的结构
+## 四、部分成果
+
+⬇️阿姆斯特丹的建筑足迹
+
+![](assets/202310200009393.png)
+
+⬇️阿姆斯特丹的道路线数据Amsterdam_road.edges
+
+![](assets/202310120958792.png)
+
+⬇️originl image和pred_color的对比
+
+![](assets/202310200017865.png)
+
+⬇️模型预测可视化结果
+
+<img src="assets/202310311254871.png"  style="zoom:50%;" />
+
+⬇️ 表 4 混淆矩阵（百分比）
+
+![](assets/202310312316148.png)
+
+⬇️ 图 10 CAM去识别不同年代模型的关注点
+
+![](assets/CAM对比图-1.jpg)
+
+![](assets/CAM对比图-2.jpg)
+
+1. *左侧小图是将CAM 叠加在原始图像上。图像的红色区域主要覆盖一楼和二楼之间的窗户或门。*
+2. *右侧小图：根据 CAM 裁剪的图像显示了窗户的演变。早期的窗户通常框架较宽，装饰较多，而且较窄。最近的窗户样式以方形和水平形状为特点，框架更薄，装饰更少，深度更小。*
+
+⬇️ 图7  阿姆斯特丹市中心建筑年代预测结果空间分布
+
+![](assets/阿姆斯特丹市中心建筑年代预测结果空间分布.jpg)
+建筑年代预测结果的空间分布
+蓝色表示旧建筑被预测为新建筑，而粉色表示模型将新建筑预测为旧建筑。灰色表示预测正确。
+
+⬇️图8 ：建筑年代预测结果在150米网格范围的准确度
+
+![](assets/阿姆斯特丹全市范围建筑年代预测准确度空间分布图.jpg)
+
+
+
+## 五、仓库主要代码文件的结构
 
 ```
 ├── 1-论文阅读和解析
@@ -54,13 +97,7 @@
 │   ├── script
 │   │   ├── 3.1-selenium多线程获取街景.py
 │   │   └── 3.2-语义分割筛选街景完整代码.py
-│   └── semantic-segmentation-pytorch-master
-│       ├── README.md
-│       └── notebooks
 ├── 4.1-对建筑年代进行深度学习训练和预测
-│   ├── assets
-│   ├── models
-│   │   └── weights_6
 │   ├── notebook
 │   │   ├── 4.1.1-建筑年代的模型选择和训练.ipynb
 │   │   ├── 4.1.2-对训练集进行预测并保存结果.ipynb
@@ -71,24 +108,16 @@
 │   │   ├── 4.1.7-探讨建筑年龄和建筑风格的关系.ipynb
 │   ├── script
 │   │   ├── TS.py
-│   │   ├── __pycache__
 │   │   ├── engine.py
 │   │   └── train.py
-│   ├── tensorboard-logs
 ├── 4.2-对建筑风格进行深度学习训练和预测
-│   ├── models
-│   │   ├── building_style_weights_1
-│   │   └── building_style_weights_2
 │   ├── notebook
 │   │   ├── 4.2.2-建筑风格模型评价.ipynb
 ├── 5-ArcgisPro工程
 │   ├── 1.使用ArcPy简化和拆分建筑.py
 │   ├── 2.使用ArcPy寻找街景点.py
 ├── README.md
-├── data
-│   └── output
 ├── my_tools
-│   ├── __pycache__
 │   ├── engine.py
 │   ├── helper_functions.py
 │   ├── validate_image.py
@@ -123,6 +152,6 @@ Keywords: Building age; Architectural style; Street view imagery; Built environm
 - [我的知乎](https://www.zhihu.com/people/Ing_ideas)
 - **微信公众号：**
 
-![微信](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/qrcode_for_gh_c0d228771707_258.jpg)
+![微信](assets/qrcode_for_wxgzh.jpg)
 
 <img src="assets/logo2.jpg" alt="更多账号" style="zoom:50%;" />
