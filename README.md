@@ -13,7 +13,7 @@
 | ✅    | Part1.论文解读：如何利用最近很火的深度学习来识别建筑年代和风格？ | [博客🔗](https://blog.renhai-lab.tech/archives/understanding-architecture-age-and-style-through-deep-learning-part1) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247486261&idx=1&sn=0e65b3228c35b57cf5de17defd175df5&chksm=c0e9e8b3f79e61a58d74ac409e31f3b64706eceefd4b439499287ef1657ea1f372867e6871e0#rd) |
 | ✅    | Part2.下载和预处理建筑足迹数据集                             | [博客🔗](https://blog.renhai-lab.tech/archives/understanding-architecture-age-and-style-through-deep-learning-part2) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247486308&idx=1&sn=954169acd58d01a22bcfc7c3d28fbfd7&chksm=c0e9e8e2f79e61f4db91e63954fc13cff5aae6fd9dff720b5d7f6587413a92eedac19ff11d02#rd) |
 | ✅    | Part3-1.获取高质量的阿姆斯特丹建筑立面图像                   | [博客🔗](https://blog.renhai-lab.tech/archives/understanding-architecture-age-and-style-through-deep-learning-part3-1) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247486379&idx=1&sn=ba562c4597fbe35d060da00a6732a8fd&chksm=c0e9e82df79e613b27bd20cb99a5b7d57f2c96739b6a5a9aed1f378d07311dc0afa6a88a7431#rd) |
-| ✅    | Part3-2.获取高质量的阿姆斯特丹建筑立面图像                   | [博客🔗](https://blog.renhai-lab.tech/archives/understanding-architecture-age-and-style-through-deep-learning-part3-2) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247486594&idx=1&sn=b155e114e8862d46e8fa713b2726c568&chksm=c0e9ef04f79e661235fbc94b734571eadcf06d44dc817cbd32906e4e3e3ff821473cbbce6cbb#rd) |
+| ✅    | Part3-2.获取高质量的阿姆斯特丹建筑立面图像                   | [博客🔗](https://blog.renhai-lab.tech/archives/understanding-architecture-age-and-style-through-deep-learning-part3-2) | [微信🔗]([https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247486594&idx=1&sn=b155e114e8862d46e8fa713b2726c568&chksm=c0e9ef04f79e661235fbc94b734571eadcf06d44dc817cbd32906e4e3e3ff821473cbbce6cbb#rd](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247487438&idx=1&sn=46584f8aae5cce92d63cdc12df574a20&chksm=c0e9ec48f79e655e90f8704bdd99f6d39fe0778f02f50b860a303d09f6a32017a4fe47bc6895#rd)) |
 | ✅    | Part4-1.对建筑年代进行深度学习训练和预测                     | [博客🔗](https://blog.renhai-lab.tech/archives/understanding-architecture-age-and-style-through-deep-learning-part4-1) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247487284&idx=1&sn=46e152ea7f69d51d76b10dfe6e5d577e&chksm=c0e9ecb2f79e65a4fe4db6d316d45a730c483a54ba5b641eb69cd8395146d113e19805b0fa90#rd) |
 | ✅    | Part4-2.对建筑年代预测结果进行展示和分析                     | [博客🔗](https://blog.renhai-lab.tech/archives/understanding-architecture-age-and-style-through-deep-learning-part4-2) | [微信🔗](https://mp.weixin.qq.com/s?__biz=MzkwNjQyNjA4OQ==&mid=2247487319&idx=1&sn=6567c74123e57cd7ab4a88a8f3b6683d&chksm=c0e9ecd1f79e65c7e3671de13e86f4d7d37e8c027662961c1d93f5963d3abc964d9c78740ad1#rd) |
 |       | 练习：Part5.对建筑风格进行深度学习训练和预测以及分析         |                                                              |                                                              |
@@ -36,43 +36,42 @@
 
 ⬇️阿姆斯特丹的建筑足迹
 
-![](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/202310200009393.png)
+![](assets/202310200009393.png)
 
 ⬇️阿姆斯特丹的道路线数据Amsterdam_road.edges
 
-![](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/202310120958792.png)
+![](assets/202310120958792.png)
 
 ⬇️originl image和pred_color的对比
 
-![](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/202310200017865.png)
+![](assets/202310200017865.png)
 
 ⬇️模型预测可视化结果
 
-<img src="https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/202310311254871.png"  style="zoom:50%;" />
+<img src="assets/202310311254871.png"  style="zoom:50%;" />
 
 ⬇️ 表 4 混淆矩阵（百分比）
 
-![](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/202310312316148.png)
+![](assets/202310312316148.png)
 
 ⬇️ 图 10 CAM去识别不同年代模型的关注点
 
-![](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/202310312316152.jpg)
+![](assets/CAM对比图-1.jpg)
 
-![](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/202310312324737.jpg)
+![](assets/CAM对比图-2.jpg)
 
 1. *左侧小图是将CAM 叠加在原始图像上。图像的红色区域主要覆盖一楼和二楼之间的窗户或门。*
 2. *右侧小图：根据 CAM 裁剪的图像显示了窗户的演变。早期的窗户通常框架较宽，装饰较多，而且较窄。最近的窗户样式以方形和水平形状为特点，框架更薄，装饰更少，深度更小。*
 
 ⬇️ 图7  阿姆斯特丹市中心建筑年代预测结果空间分布
 
-![](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/202310242140082.png)
+![](assets/阿姆斯特丹市中心建筑年代预测结果空间分布.jpg)
 建筑年代预测结果的空间分布
 蓝色表示旧建筑被预测为新建筑，而粉色表示模型将新建筑预测为旧建筑。灰色表示预测正确。
 
 ⬇️图8 ：建筑年代预测结果在150米网格范围的准确度
 
-![](https://image-1315363329.cos.ap-shanghai.myqcloud.com/lessons/202310312316173.jpg)
-
+![](assets/阿姆斯特丹全市范围建筑年代预测准确度空间分布图.jpg)
 
 ## 五、数据集
 
